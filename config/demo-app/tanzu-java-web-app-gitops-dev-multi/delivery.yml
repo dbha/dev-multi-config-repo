@@ -51,15 +51,6 @@ spec:
           protocol: TCP
         resources: {}
         securityContext:
-          runAsUser: 1000
-        volumeMounts:
-          - mountPath: /data
-            name: mydata
-            readOnly: true
-      volumes:
-        - name: mydata
-          persistentVolumeClaim:
-            claimName: mydata-pvc
-            readOnly: true      
+          runAsUser: 1000   
       serviceAccountName: default
 
