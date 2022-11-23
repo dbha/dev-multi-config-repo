@@ -59,7 +59,7 @@ spec:
       volumes:
       - name: mydata
         persistentVolumeClaim:
-          claimName: mydata-pv
+          claimName: mydata-pvc
           readOnly: false      
       serviceAccountName: default
 
