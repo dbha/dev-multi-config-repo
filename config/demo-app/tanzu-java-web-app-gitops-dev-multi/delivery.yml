@@ -55,11 +55,11 @@ spec:
         volumeMounts:
         - mountPath: /data
           name: mydata
-          readOnly: false
+          readOnly: true
       volumes:
       - name: mydata
         persistentVolumeClaim:
           claimName: mydata-pvc
-          readOnly: false      
+          readOnly: true      
       serviceAccountName: default
 
